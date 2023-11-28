@@ -21,7 +21,7 @@ struct ContentView: View {
             MessagesView()
                 .badge("10")
                 .tabItem {
-                    Image(systemName: "message.fill")
+                    Image(systemName: "message.fill").font(.system(size: 50))
                 }
         }
     }
