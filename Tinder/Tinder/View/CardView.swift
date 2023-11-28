@@ -12,9 +12,13 @@ struct CardView: View {
     @State var card: Card
     
     var body: some View {
-        ZStack(alignment: .topLeading) {
+        ZStack {
             Image(card.imageName)
                 .resizable()
+                .scaledToFill()
+                .frame(maxWidth: UIScreen.main.bounds.size.width,minHeight: 750,maxHeight:750)
+
+            
             LinearGradient(gradient: cardGradient, startPoint: .top, endPoint: .bottom)
             VStack {
                 Spacer()
