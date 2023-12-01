@@ -10,8 +10,8 @@ import SwiftUI
 struct SettingsView: View {
     @State private var distance = 5.0
     @State private var minAge = 18.0
-    @State private var maxAge = 100.0
-    @State private var numPhotos = 1.0
+    @State private var maxAge = 70.0
+    @State private var numPhotos = 3.0
     @State private var hasBio = true
     @State private var isToggle = true
     @State private var isToggle2 = false
@@ -62,8 +62,8 @@ struct SettingsView: View {
     let sleepingHabits = ["Early bird", "Night owl", "In a spectrum"]
     
     var body: some View {
-        NavigationStack {
-            Form {
+        NavigationView {
+            List {
                 Section {
                     VStack {
                         HStack {
@@ -122,6 +122,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "eye")
+                                    .foregroundColor(Color("darkGray"))
                                 Text("Looking For")
                                 Spacer()
                                 Picker("Looking For", selection: $selectedLookingFor) {
@@ -133,6 +134,8 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "eye")
+                                    .foregroundColor(Color("darkGray"))
+
                                 Text("Open to...")
                                 Spacer()
                                 Picker("Open To", selection: $selectedOpenTo) {
@@ -144,6 +147,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "moon.stars")
+                                    .foregroundColor(Color("darkGray"))
                                 Text("Zodiac")
                                 Spacer()
                                 Picker("Zodiac", selection: $selectedZodiac) {
@@ -155,6 +159,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "graduationcap")
+                                    .foregroundColor(Color("darkGray"))
                                 Text("Education")
                                 Spacer()
                                 Picker("Education", selection: $selectedEducation) {
@@ -167,6 +172,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "puzzlepiece")
+                                    .foregroundColor(Color("darkGray"))
                                 Text("Personality Type")
                                 Spacer()
                                 Picker("Personality Type", selection: $selectedPersonalityType) {
@@ -178,6 +184,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "phone.bubble.left")
+                                    .foregroundColor(Color("darkGray"))
                                 Text("Communication")
                                 Spacer()
                                 Picker("Communication Style", selection: $selectedCommunicationStyle) {
@@ -189,6 +196,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "heart")
+                                    .foregroundColor(Color("darkGray"))
                                 Text("Love Style")
                                 Spacer()
                                 Picker("Love Style", selection: $selectedLoveStyle) {
@@ -200,6 +208,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "wineglass")
+                                    .foregroundColor(Color("darkGray"))
                                 Text("Drinking")
                                 Spacer()
                                 Picker("Drinking", selection: $selectedDrinking) {
@@ -211,6 +220,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "puzzlepiece")
+                                    .foregroundColor(Color("darkGray"))
                                 Text("Smoking")
                                 Spacer()
                                 Picker("Smoking", selection: $selectedSmoking) {
@@ -222,6 +232,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "leaf")
+                                    .foregroundColor(Color("darkGray"))
                                 Text("Cannabis")
                                 Spacer()
                                 Picker("Cannabis", selection: $selectedCannabis) {
@@ -233,6 +244,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "dumbbell")
+                                    .foregroundColor(Color("darkGray"))
                                 Text("Workout")
                                 Spacer()
                                 Picker("Workout", selection: $selectedWorkout) {
@@ -244,6 +256,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                 Image(systemName: "takeoutbag.and.cup.and.straw")
+                                    .foregroundColor(Color("darkGray"))
                                 Text("Dietary Preference")
                                 Spacer()
                                 Picker("Dietary Preference", selection: $selectedDietaryPreference) {
@@ -255,6 +268,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                     Image(systemName: "at")
+                                    .foregroundColor(Color("darkGray"))
                                     Text("Social Media")
                                     Spacer()
                                 Picker("Social Media", selection: $selectedSocialMedia) {
@@ -266,6 +280,7 @@ struct SettingsView: View {
                             Divider()
                             HStack {
                                     Image(systemName: "sun.and.horizon")
+                                    .foregroundColor(Color("darkGray"))
                                     Text("Sleeping Habits")
                                     Spacer()
                                 Picker("Sleeping Habits", selection: $selectedSleepingHabits) {
@@ -277,16 +292,13 @@ struct SettingsView: View {
                         }
                         .labelsHidden()
                     }
-                    
-                    
-                    
-                    
+                   
                     
                 } header: {
                     VStack (alignment: .leading) {
                         Text("PREMIUM DISCOVERY")
                             .font(.headline)
-                            .foregroundColor(.gray)
+                            .foregroundColor(Color("darkGray"))
                             .fontWeight(.bold)
                             .padding(.bottom, 5)
                             .textCase(nil)
@@ -297,12 +309,13 @@ struct SettingsView: View {
                 
                 }
             }
+            .listStyle(GroupedListStyle())
             .navigationBarItems(
                 leading:
                     Text("Discovery Settings")
                     .font(.title2)
                     .fontWeight(.bold)
-                    .padding(.leading, 25)
+                    .padding(.leading, 80)
                 )
         }
     }

@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var likedCardsModel: LikedCardsViewModel = LikedCardsViewModel()
     var body: some View {
         TabView() {
             ProfileView()
                 .tabItem {
                     Image(systemName: "person.fill")
                 }
-            HomeView()
+            HomeView(likedCardsModel: likedCardsModel)
                 .tabItem {
                     Image(systemName: "flame.fill")
                 }
-            MessagesView()
+            MessagesView(likedCardsModel: likedCardsModel)
                 .badge("10")
                 .tabItem {
                     Image(systemName: "message.fill").font(.system(size: 50))
