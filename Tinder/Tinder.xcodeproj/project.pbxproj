@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C442F96A2B19A7E30056E9B1 /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442F9692B19A7E30056E9B1 /* LikesView.swift */; };
-		C442F96C2B19AB030056E9B1 /* 99LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442F96B2B19AB030056E9B1 /* 99LikesView.swift */; };
 		C47502D92B180DFA00CB44F4 /* LikedCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47502D82B180DFA00CB44F4 /* LikedCardsViewModel.swift */; };
 		C4C6B18E2B169FA40071D51E /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6B18D2B169FA40071D51E /* ProfileEditView.swift */; };
 		C4C6B1902B16BD2F0071D51E /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6B18F2B16BD2F0071D51E /* EditView.swift */; };
@@ -34,8 +32,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C442F9692B19A7E30056E9B1 /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
-		C442F96B2B19AB030056E9B1 /* 99LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 99LikesView.swift; sourceTree = "<group>"; };
 		C47502D82B180DFA00CB44F4 /* LikedCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedCardsViewModel.swift; sourceTree = "<group>"; };
 		C4C6B18D2B169FA40071D51E /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
 		C4C6B18F2B16BD2F0071D51E /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
@@ -146,8 +142,6 @@
 				C4EC987E2B14F6FC007C8BFC /* ConversationView.swift */,
 				C4EC98772B13EABC007C8BFC /* HomeView.swift */,
 				C4EC98792B13EC49007C8BFC /* CardView.swift */,
-				C442F9692B19A7E30056E9B1 /* LikesView.swift */,
-				C442F96B2B19AB030056E9B1 /* 99LikesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,10 +241,8 @@
 				C4EC987D2B14F2FF007C8BFC /* MessageModel.swift in Sources */,
 				C4DC54A52B171F0300950A76 /* SharedViewModel.swift in Sources */,
 				C4EC986E2B13DFC7007C8BFC /* CardModel.swift in Sources */,
-				C442F96A2B19A7E30056E9B1 /* LikesView.swift in Sources */,
 				C4DC54A82B173CF500950A76 /* TinderGoldView.swift in Sources */,
 				C4DC54B02B17E5B000950A76 /* ConversationViewModel.swift in Sources */,
-				C442F96C2B19AB030056E9B1 /* 99LikesView.swift in Sources */,
 				C47502D92B180DFA00CB44F4 /* LikedCardsViewModel.swift in Sources */,
 				C4EC987F2B14F6FC007C8BFC /* ConversationView.swift in Sources */,
 			);
